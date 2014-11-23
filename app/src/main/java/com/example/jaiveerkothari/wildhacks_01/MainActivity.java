@@ -42,10 +42,6 @@ public class MainActivity extends Activity {
 
         strArr=new ArrayList<String>();
 
-       // for(int i=0; i<2; i++)
-       // {
-       //     strArr.add("Row:"+i);
-       // }
         adapter= new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,strArr);
 
         lv.setAdapter(adapter);
@@ -88,7 +84,6 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 EditText editText = (EditText) findViewById(R.id.editText1);
 
-                //String message = editText.getText().toString();
                 String message = simonArg;
 
                 intent.putExtra(EXTRA_MESSAGE, message);
