@@ -42,6 +42,7 @@ public class ResultActivity extends Activity {
         textView1.setText("Simon says: ");
         textView2.setTextSize(40);
         textView2.setText(message);
+        textView2.setY(120);
 
         rl.addView(textView1);
 
