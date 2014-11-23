@@ -9,10 +9,7 @@ import android.content.Intent;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 public class ResultActivity extends Activity {
-
-
 
     private TextView tv1;
 
