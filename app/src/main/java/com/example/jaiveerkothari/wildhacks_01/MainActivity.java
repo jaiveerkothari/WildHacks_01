@@ -75,10 +75,10 @@ public class MainActivity extends Activity {
                 Random rand = new Random();
                 simonAns = rand.nextInt(len);
 
-                Log.d("simon button", "Simon: " + strArr.get(simonAns));
+                // Testing if an output result is achieved through
+                String simonArg = strArr.get(simonAns);
 
-                String simonArg=strArr.get(simonAns);
-
+                Log.d("simon button", "Simon: " + simonArg);
                 adapter.notifyDataSetChanged();
 
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
